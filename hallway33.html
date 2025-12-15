@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>빛의 온도</title>
+  <link rel="stylesheet" href="hallway33.css">
+</head>
+
+<body>
+
+  <header>
+    <h1><a href="hallway.html">빛의 온도</a></h1>
+    <p class="on-h"><a href="https://product.kyobobook.co.kr/detail/S000000620214">「1984」 - 조지 오웰 </a></p>
+  </header>
+
+  <main>
+    <figure class="image-wrap">
+      <img src="img/33.0.jpg" alt="분홍색 문이 있는 차가운 분위기의 복도사진">
+      <figcaption>
+        모든 것이 안개 속처럼 희미해졌다. 과거는 지워졌고, 그 지워졌다는 사실조차 잊혔다. 거짓이 진실이 되었고, 진실은 존재하지 않게 되었다.
+      </figcaption>
+    </figure>
+  </main>
+
+  <audio id="bgm" src="music/2.mp3" loop></audio>
+
+<script>
+  const bgm = document.getElementById('bgm');
+  bgm.volume = 0.15;
+
+  document.addEventListener('click', () => {
+    bgm.play();
+  }, { once: true });
+</script>
+
+  <footer>
+    © 2025. 김서연 모든 권리 보유.
+  </footer>
+
+</body>
+</html>
