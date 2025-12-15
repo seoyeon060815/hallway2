@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>빛의 온도</title>
+  <link rel="stylesheet" href="hallway333.css">
+</head>
+
+<body>
+
+  <header>
+    <h1><a href="hallway.html">빛의 온도</a></h1>
+    <p class="on-h"><a href="https://product.kyobobook.co.kr/detail/S000001277744">「샤이닝」 - 스티븐 킹 </a></p>
+  </header>
+
+  <main>
+    <figure class="image-wrap">
+      <img src="img/333.0.jpg" alt="옆에 난간이 있는 어두운 복도 사진">
+      <figcaption>
+        다른 모든 것을 잊을 수 있을 것이다.
+      </figcaption>
+    </figure>
+  </main>
+
+<audio id="bgm" src="music/3.mp3" loop></audio>
+
+<script>
+  const bgm = document.getElementById('bgm');
+  bgm.volume = 0.15;
+
+  document.addEventListener('click', () => {
+    bgm.play();
+  }, { once: true });
+</script>
+
+
+  <footer>
+    © 2025. 김서연 모든 권리 보유.
+  </footer>
+
+</body>
+</html>
