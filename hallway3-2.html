@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>빛의 온도</title>
+  <link rel="stylesheet" href="hallway3.css">
+</head>
+
+<body>
+
+  <header>
+    <h1><a href="hallway.html">빛의 온도</a></h1>
+    <p class="on-h"><a href="https://www.wavve.com/player/movie?movieid=MV_EN01_EN000000113">〈말죽거리 잔혹〉 (유하) </a></p>
+  </header>
+
+  <main>
+    <figure class="image-wrap">
+      <img src="img/3.2.jpg" alt="멀리 보이는 우리문 사이로 들어오는 햇빛을 품은 복도 사진">
+      <figcaption>
+        그때는 몰랐다 그 시절이 내 인생의 전부였다는 걸.
+      </figcaption>
+    </figure>
+  </main>
+
+<audio id="bgm" src="music/1.mp3" loop></audio>
+
+<script>
+  const bgm = document.getElementById('bgm');
+  bgm.volume = 0.15;
+
+  document.addEventListener('click', () => {
+    bgm.play();
+  }, { once: true });
+</script>
+
+  <footer>
+    © 2025. 김서연 모든 권리 보유.
+  </footer>
+
+</body>
+</html>

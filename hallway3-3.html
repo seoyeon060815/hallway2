@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>빛의 온도</title>
+  <link rel="stylesheet" href="hallway3.css">
+</head>
+
+<body>
+
+  <header>
+    <h1><a href="hallway.html">빛의 온도</a></h1>
+    <p class="on-h"><a href="https://www.youtube.com/watch?v=USkEnd9gADA&list=RDUSkEnd9gADA&start_radio=1">〈Goodbye Summer〉 - f(x) </a></p>
+  </header>
+
+  <main>
+    <figure class="image-wrap">
+      <img src="img/3.3.jpg" alt="복도로 햇빛이 들어와 전체적인 분위기가 따뜻한 복도 사진">
+      <figcaption>
+        기억해 복도에서 떠들다 같이 혼나던 우리 둘
+      </figcaption>
+    </figure>
+  </main>
+
+<audio id="bgm" src="music/1.mp3" loop></audio>
+
+<script>
+  const bgm = document.getElementById('bgm');
+  bgm.volume = 0.15;
+
+  document.addEventListener('click', () => {
+    bgm.play();
+  }, { once: true });
+</script>
+
+  <footer>
+    © 2025. 김서연 모든 권리 보유.
+  </footer>
+
+</body>
+</html>
